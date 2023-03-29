@@ -1,7 +1,10 @@
 import streamlit
 import pandas
 
+#read csv
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+#creating list for choose fruits
+my_fruit_list = my_fruit_list.set_index('Fruit')
 
 streamlit.title('My Parents Healthy Dinner')
 streamlit.header('Breakfast Menu')
