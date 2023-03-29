@@ -19,4 +19,4 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #display the table
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
-streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(fruits_to_show)
